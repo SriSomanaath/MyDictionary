@@ -27,9 +27,8 @@ export default function Home() {
     }
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event:any) => {
     setSearchTerm(event.target.value);
-    // refetch();
   };
 
   var { isLoading, data, refetch } = useQuery({
